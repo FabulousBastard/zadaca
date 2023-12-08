@@ -1,4 +1,4 @@
-/*
+	/*
 ZADATAK 1. Napisati program koji unosi cijele brojeve sve dok se četiri puta zaredom ne unese broj 
 		   veći od 10. Program ispisuje broj koji je unesen najviše puta. 
 */
@@ -10,17 +10,17 @@ int main()
 {
 	int kolBrVecihOdDeset = 0;
 	int br = 0;
-	int najveciBr = 0;
-	int uneseniBr[100];
+	int max = 0;
+	int uneseniBrojevi[100];
 
-	memset(uneseniBr, 0, sizeof(uneseniBr)); 
+	memset(uneseniBrojevi, 0, sizeof(uneseniBrojevi)); 
 
-	while(kolBrVecihOdDeset < 4){
+	while( kolBrVecihOdDeset < 4 ){
 
 		printf("Unesi broj: ");
 		scanf("%d", &br);
-		uneseniBr[br]++;
-		
+		uneseniBrojevi[br]++;
+
 		if(br > 10){
 		    kolBrVecihOdDeset++;
 		}
@@ -28,14 +28,15 @@ int main()
 	
 	for (int i = 0; i < 99; ++i)
 		{
-			if (uneseniBr[i] > najveciBr)
+			if (uneseniBrojevi[i] >= max)
 			{
-				najveciBr = i;
+				// ne valja 
+				max = i;
 			}
 		}
 
 
-	printf("Broj koji je unesen najvise puta je: %d\n", najveciBr );
+	printf("Broj koji je unesen najvise puta je: %d\n", max );
 	scanf("%d",&br);
 
 	return 0;
