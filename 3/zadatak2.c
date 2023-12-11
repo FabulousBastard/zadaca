@@ -9,12 +9,7 @@ ZADATAK 2. Napisati program koji unosi znakove sve dok se zaredom ne unesu mala 
 
 int main()
 {
-	int kolicinaA = 0;
-	int kolicinaE = 0;
-	int kolicinaI = 0;
-	int kolicinaO = 0;
-	int kolicinaU = 0;
-
+	int kolicinaA = 0, kolicinaE = 0, kolicinaI = 0, kolicinaO = 0, kolicinaU = 0;
 	char temp = 0, slovo1 = 0, slovo2 = 0, slovo3 = 0, slovo4 = 0;
 
 	while(!(slovo1 == 'j' && slovo2 == 'a' && slovo3 == 'r' && slovo4 == 'k')){
