@@ -13,9 +13,12 @@ void ispis(){
 
 	for (int i = 0; i < 255; ++i)
 	{
-		if (cestostZnakova[i] > 2)
+		if (cestostZnakova[i] == 3)
 		{
-			printf("%c\n", i);
+			if (64 < i && i < 91 || 96 < i && i < 123)
+			{
+				printf("%c\n", i);
+			}
 		}
 	}
 }
